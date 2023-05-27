@@ -1,16 +1,20 @@
 package model;
 
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
+@Component
 public class Car {
     public Car() {
     }
+    private String model;
+    private int year;
+    private String color;
     public Car (String model, int year, String color) {
         this.model = model;
         this.year = year;
         this.color = color;
     }
-    private String model;
-    private int year;
-    private String color;
 
     public String getModel() {
         return model;
